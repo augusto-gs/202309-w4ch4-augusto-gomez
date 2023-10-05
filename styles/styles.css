@@ -36,13 +36,12 @@ button {
   color: var(--secondary-bg-color);
   font-size: 0.75rem;
   text-transform: uppercase;
-  position: relative;
-  top: 1.3rem;
 }
 
 .cards-heading {
   font-size: 2rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .button--color {
@@ -54,6 +53,66 @@ button {
   padding: 0.8rem 1rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+.cards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pet-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 180px;
+  margin: 0.8rem;
+}
+
+.pet-card__image {
+  object-fit: cover;
+  border-radius: 33px;
+  margin: 0.5rem 0;
+  width: inherit;
+  height: inherit;
+}
+
+.text-container--pet-card {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 33px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  color: #fff;
+  background-color: var(--main-bg-color);
+  padding: 10px;
+}
+
+.button--hover:hover {
+  background-color: #fff;
+  border-style: solid;
+  border-color: var(--secondary-bg-color);
+  color: var(--secondary-bg-color);
+}
+
+.text-container__hover:hover {
+  opacity: 0.5;
+}
+
+.activities-text--pet-card {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.activity-type--pet-card {
+  font-weight: 900;
 }
 
 .container {
