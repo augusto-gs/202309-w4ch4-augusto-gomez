@@ -26,10 +26,24 @@ button {
   padding: 0.5rem 0.8rem;
 }
 
+.container {
+  padding: 1.25rem;
+  margin: 1.25rem;
+}
+
+.button-container {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
 .cards-title-tab {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .cards-descriptor-title {
@@ -42,6 +56,7 @@ button {
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
+  margin: 0 1rem 2rem 2rem;
 }
 
 .button--color {
@@ -58,6 +73,7 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
 }
 
 .pet-card {
@@ -65,8 +81,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 180px;
+  width: 18.75rem;
+  height: 12.5rem;
   margin: 0.8rem;
 }
 
@@ -115,7 +131,33 @@ button {
   font-weight: 900;
 }
 
-.container {
-  padding: 1.25rem;
-  margin: 1.25rem;
+@media (min-width: 600px) {
+  .cards-title-tab {
+    display: inline-flex;
+    padding: 1rem 0 0 0;
+    align-items: flex-start;
+  }
+  .button-container {
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    position: relative;
+    top: -10rem;
+    top: -5.1rem;
+    margin: 0 2rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pet-card {
+    width: 19rem;
+    height: 25rem;
+  }
+
+  .cards-descriptor-title {
+    margin: 0 0 0 2rem;
+  }
 }
